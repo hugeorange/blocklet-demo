@@ -1,0 +1,20 @@
+.block-transaction-wrap {
+  .title {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .demo-trans-list {
+    text-align: left;
+    padding: 10px 30px;
+    .trans-item {
+      word-break: break-all;
+      .label {
+        width: 100px;
+      }
+      .value {
+        flex: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+name: blockle-demo
+title: blockle-demo
+description: An ABT Node blocklet
+keywords:
+  - blocklet
+  - react
+group: dapp
+did: z8iZt11jjTCLipXcKf8aHAGWZ9WvxfLLyUKxi
+main: server/index.js
+author:
+  name: 姚磊
+  email: 15618279071@163.com
+repository:
+  type: git
+  url: https://github.com/hugeorange/blocklet-demo
+specVersion: 1.1.1
+version: 0.2.0
+logo: logo.png
+files:
+  - build
+  - logo.png
+  - README.md
+  - blocklet.md
+  - screenshots
+  - server/hooks/pre-start.js
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+charging:
+  price: 0
+  tokens: []
+  shares: []
+timeout:
+  start: 60
+requirements:
+  abtnode: '>=1.4.0'
+  os: '*'
+  cpu: '*'
+scripts:
+  preStart: node server/hooks/pre-start.js
+  dev: npm run start
+environments:
+  - name: CHAIN_ID
+    description: What's endpoint of the chain id?
+    required: true
+    default: beta
+    secure: false
+  - name: CHAIN_HOST
+    description: What's endpoint of the chain?
+    required: true
+    default: https://beta.abtnetwork.io/api/
+    secure: false
+capabilities: {}
+screenshots: []
+children: []
